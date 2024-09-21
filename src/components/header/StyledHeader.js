@@ -5,7 +5,7 @@ export const Title = styled.h1`
   color: white; 
   text-align: center; 
   justify-content: center;
-  background: #282c34; 
+  background: #412267; 
   padding: 15px; 
-  `
-;
+    
+  `;

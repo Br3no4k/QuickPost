@@ -10,7 +10,7 @@ class App extends React.Component {
     return (
       <>
         <Header />
-        <Banner imageUrl="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2ZwNTlyN3ZiOTNpb3p4amRmcHBwd3VibXFkb3Q5NTluOWp5NW5qZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/25LbA5gcDNM5N7sHHy/giphy.gif" />
+        <Banner imageUrl="https://media3.giphy.com/media/nHaF5cJanabVk86MLJ/giphy.webp?cid=ecf05e47ra8rbxb03mebicexozmdo5a3k4jkfetor35f7nu6&ep=v1_gifs_search&rid=giphy.webp&ct=g" />
         <PostForm />
         <Footer /> 
       </>

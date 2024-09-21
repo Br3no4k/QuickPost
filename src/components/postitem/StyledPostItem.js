@@ -2,38 +2,50 @@ import styled from 'styled-components';
 
 export const PostContainer = styled.div`
   display: flex;
-  justify-content: space-aroud;
-  align-items: flex-start;
+  margin: 0 auto;
   margin-bottom: 20px;
-  padding: 10px;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-  max-width: 100%;
-`;
+  padding: 20px;
+  border: 1px solid;
+  border-radius: 10px;
+  width: 94%;
+;`
 
 export const PostImage = styled.img`
-  max-width: 40%; /* Ajuste a largura da imagem */
-  height: auto; /* Mantém a proporção da imagem */
-  margin-right: 5px; /* Espaço entre a imagem e os itens de texto */
+  width: 40%;
+  img{
+    width: 100%;
+    height: auto;
+  }
 `;
 
-export const PostContent = styled.div`
-  flex: 1;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  max-width: 350px;
 
-  p {
-    margin: 0;
-    line-height: 1.5;
+export const PostContent = styled.div`
+ width: 60%;
+  padding: 14px;
+   verflow-wrap: break-word;
+  max-width: 100px;
+`;
+
+export const Button = styled.button`
+  background-color: #853041;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: rgba(255, 0, 0, 1);
   }
 
-  button {
-    display: inline;
-    margin-left: 20px; /* Espaço entre o texto e o botão */
-    background-color: transparent;
-    border: none;
-    color: blue;
-    cursor: pointer;
+ &:active {
+    background-color: rgba(200, 0, 0, 1);
+  }
+
+ &:disabled {
+    background-color: rgba(255, 0, 0, 0.4);
+    cursor: not-allowed;
   }
 `;

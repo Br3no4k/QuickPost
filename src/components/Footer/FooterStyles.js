@@ -8,7 +8,7 @@ export const FooterContainer = styled.footer`
   padding: 10px;
   color: white;
   width: 100%;
-  margin-top: auto; /* Adiciona espaço acima do footer */
+  margin-top: auto; 
 `;
 
 export const FooterText = styled.p`

@@ -10,21 +10,23 @@ export const ModalOverlay = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-`;
+`
+;
 
 export const ModalContainer = styled.div`
   background-color: white;
   padding: 20px;
   border-radius: 5px;
-  max-width: 600px; /* Limite de largura para o modal */
-  width: 90%; /* 90% da largura da tela */
-  max-height: 80vh; /* Limite de altura */
-  overflow-y: auto; /* Adiciona rolagem se o conteúdo ultrapassar a altura */
-  overflow-x: hidden; /* Impede rolagem horizontal */
-  word-wrap: break-word; /* Quebra palavras longas */
+  max-width: 600px; 
+  width: 90%; 
+  max-height: 80vh; 
+  overflow-y: auto; 
+  overflow-x: hidden; 
+  word-wrap: break-word; 
+
 `;
 
-export const CloseButton = styled.button`
+export const CloseButton =  styled.button`
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -32,4 +34,6 @@ export const CloseButton = styled.button`
   position: absolute;
   top: 10px;
   right: 10px;
+
+
 `;

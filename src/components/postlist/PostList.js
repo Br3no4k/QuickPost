@@ -29,17 +29,17 @@ export class PostList extends React.Component {
               <PostItem 
                 title={post.title}
                 content={
-                  post.content.length > 200
+                  post.content.length > 60
                     ? (
                       <>
-                        {post.content.slice(0, 200)}...
+                        {post.content.slice(0, 60)}...
                         <button onClick={() => this.openModal(post.content)} style={{ marginLeft: '5px' }}>Ver mais</button>
                       </>
                     )
                     : post.content
                 }
                 imageUrl={post.imageUrl}
-                onDelete={() => onDeletePost(post.id)} // Passando a função de deletar
+                onDelete={() => onDeletePost(post.id)}
               />
             </PostContainer>
           ))

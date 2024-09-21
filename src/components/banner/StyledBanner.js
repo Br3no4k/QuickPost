@@ -6,8 +6,8 @@ export const ContainerImage = styled.div`
     
     img {
         margin-top: 20px;
-        width: 80%; 
+        width: 40%; 
         max-height: 300px;
     }
-        `
-;
+        
+`;

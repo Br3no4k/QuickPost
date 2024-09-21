@@ -93,6 +93,9 @@ export class PostForm extends React.Component {
 
         <PostList posts={this.state.post} onDeletePost={this.deletePost} />
       </>
+
     );
+
   }
+  
 }

@@ -5,16 +5,16 @@
 }
 
 body, html {
-  height: 100%; /* Garante que o body ocupe 100% da altura */
+  height: 100%; 
   margin: 0;
 }
 
 #root {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Garante que o root ocupe pelo menos 100% da altura da viewport */
+  min-height: 100vh; 
 }
 
 footer {
-  margin-top: auto; /* Isso empurra o footer para o final do container */
+  margin-top: auto; 
 }
