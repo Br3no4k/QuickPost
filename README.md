@@ -52,3 +52,7 @@ Agradecimento a contribuição do projeto:
 - **Jotinha14** - Desenvolvimento e estrutura do projeto.
 - **Br3no4k** - Implementação de funcionalidades.
 - **LeviCastilho** - Design e responsividade.
+
+## 🚀 Tecnologias Utilizadas
+
+- **React**: A biblioteca principal utilizada para construir a interface e as funcionalidades da aplicação.
