@@ -7,7 +7,7 @@ export class Banner extends React.Component {
     return (
       <>
         <ContainerImage>
-          <img src={imageUrl} alt="Imagem aqui" />
+          <img src={imageUrl} alt="Imagem urso dançando" />
         </ContainerImage>
       </>
     );

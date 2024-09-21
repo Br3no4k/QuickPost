@@ -3,7 +3,7 @@ import "./App.css";
 import { Header } from "./components/header/Header";
 import { Banner } from "./components/banner/Banner";
 import { PostForm } from "./components/postform/PostForm";
-import Footer from "./components/Footer/Footer";
+import { Footer } from "./components/Footer/Footer";
 
 class App extends React.Component {
   render() {

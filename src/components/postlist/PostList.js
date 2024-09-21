@@ -1,5 +1,6 @@
 import React from "react";
 import { PostItem } from "../postitem/PostItem";
+import { PostContainer } from './StyledPostList'; // Importando o styled component
 
 export class PostList extends React.Component {
   render() {
@@ -9,15 +10,14 @@ export class PostList extends React.Component {
       <>
         {posts.length > 0 ? (
           posts.map((post) => (
-            <div key={post.id}>
+            <PostContainer key={post.id}>
               <PostItem 
                 title={post.title}
                 content={post.content}
                 imageUrl={post.imageUrl}
               />
-              {/* Botão para deletar o post */}
               <button onClick={() => onDeletePost(post.id)}>Deletar</button>
-            </div>
+            </PostContainer>
           ))
         ) : (
           <p>Nenhum post disponível.</p> // Exibe mensagem se não houver posts
@@ -25,4 +25,4 @@ export class PostList extends React.Component {
       </>
     );
   }
-} 
+}

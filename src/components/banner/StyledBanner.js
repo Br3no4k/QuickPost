@@ -1,10 +1,13 @@
-
-
 import styled from 'styled-components';
 
 export const ContainerImage = styled.div`
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-top: 20px;
-`
+    
+    img {
+        margin-top: 20px;
+        width: 80%; 
+        max-height: 300px;
+    }
+        `
+;

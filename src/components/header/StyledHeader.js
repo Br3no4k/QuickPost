@@ -1,10 +1,11 @@
-
-
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Title = styled.h1`
-display: flex;
-align-items: center;
-justify-content: center;
-margin-top: 20px;
-`
+  font-size: 2.0rem; 
+  color: white; 
+  text-align: center; 
+  justify-content: center;
+  background: #282c34; 
+  padding: 15px; 
+  `
+;
