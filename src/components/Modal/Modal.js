@@ -1,20 +1,15 @@
 import React from 'react';
-import { ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody } from './StyledModal';
+import { ModalOverlay, ModalContainer, CloseButton } from './StyledModal';
 
 const Modal = ({ isOpen, onClose, content }) => {
   if (!isOpen) return null;
 
   return (
     <ModalOverlay onClick={onClose}>
-      <ModalContent onClick={(e) => e.stopPropagation()}>
-        <ModalHeader>
-          <h2>Detalhes do Post</h2>
-          <ModalCloseButton onClick={onClose}>X</ModalCloseButton>
-        </ModalHeader>
-        <ModalBody>
-          <p>{content}</p>
-        </ModalBody>
-      </ModalContent>
+      <ModalContainer onClick={(e) => e.stopPropagation()}> {/* Evita que o clique no container feche o modal */}
+        <CloseButton onClick={onClose}>×</CloseButton>
+        <div>{content}</div>
+      </ModalContainer>
     </ModalOverlay>
   );
 };

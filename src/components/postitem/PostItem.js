@@ -3,7 +3,7 @@ import { PostContainer, PostImage, PostContent } from './StyledPostItem';
 
 export class PostItem extends React.Component {
   render() {
-    const { imageUrl, title, content } = this.props;
+    const { imageUrl, title, content, onDelete } = this.props; // Adicione onDelete como prop
     return (
       <PostContainer>
         <PostImage 
@@ -13,8 +13,9 @@ export class PostItem extends React.Component {
         <PostContent>
           <h3>{title}</h3>
           <p>{content}</p>
+          <button onClick={onDelete} style={{ marginTop: '10px' }}>Deletar</button> {/* Botão de deletar aqui */}
         </PostContent>
       </PostContainer>
-    )
+    );
   }
 }
