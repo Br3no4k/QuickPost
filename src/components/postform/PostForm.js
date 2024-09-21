@@ -69,6 +69,7 @@ export class PostForm extends React.Component {
               value={this.state.title}
               onChange={this.onChangeTitle}
               placeholder="Digite seu titulo" 
+              maxLength={50}
             />
 
             <FormText 
